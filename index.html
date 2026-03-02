@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reglas del Truco Argentino</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome para íconos (opcional pero queda lindo) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
         </div>
     </header>
 
-    <!-- Barra de navegación simple -->
+    <!-- Barra de navegación -->
     <nav class="nav">
         <div class="container">
             <ul class="nav-lista">
@@ -30,6 +30,7 @@
                 <li><a href="#cantos">Cantos</a></li>
                 <li><a href="#envido">Envido</a></li>
                 <li><a href="#flor">Flor</a></li>
+                <li><a href="#contador">Contador</a></li>
             </ul>
         </div>
     </nav>
@@ -60,7 +61,7 @@
             </div>
         </section>
 
-        <!-- Sección Jerarquía de Cartas -->
+        <!-- Sección Jerarquía de Cartas con imágenes -->
         <section id="jerarquia" class="seccion">
             <h2 class="titulo-seccion">
                 <i class="fas fa-sort-amount-down"></i>
@@ -69,70 +70,82 @@
             <div class="card">
                 <p class="texto-importante">¡Atención! En el truco, las cartas NO valen por su número. Esta es la escala de mayor a menor:</p>
                 
-                <!-- Tabla de jerarquía en grid -->
                 <div class="tabla-jerarquia">
-                    <!-- Títulos de la tabla -->
                     <div class="tabla-fila titulos">
                         <div class="tabla-celda">Jerarquía</div>
                         <div class="tabla-celda">Carta</div>
                         <div class="tabla-celda">Seña</div>
                     </div>
                     
-                    <!-- Filas de cartas -->
                     <div class="tabla-fila">
-                        <div class="tabla-celda numero">1° (La más alta)</div>
-                        <div class="tabla-celda carta">🂡 Ancho de espadas</div>
+                        <div class="tabla-celda numero">1°</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂡</span> Ancho de espadas
+                        </div>
                         <div class="tabla-celda seña">Levantar cejas</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">2°</div>
-                        <div class="tabla-celda carta">🂣 Ancho de bastos</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂣</span> Ancho de bastos
+                        </div>
                         <div class="tabla-celda seña">Guiñar ojo derecho</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">3°</div>
-                        <div class="tabla-celda carta">🂮 Siete de espadas</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂮</span> Siete de espadas
+                        </div>
                         <div class="tabla-celda seña">Mover labio derecha</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">4°</div>
-                        <div class="tabla-celda carta">🂧 Siete de oros</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂧</span> Siete de oros
+                        </div>
                         <div class="tabla-celda seña">Mover labio izquierda</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">5°</div>
-                        <div class="tabla-celda carta">Tres (cualquier palo)</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂳</span> Tres (cualquier palo)
+                        </div>
                         <div class="tabla-celda seña">Morder labio inferior</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">6°</div>
-                        <div class="tabla-celda carta">Dos (cualquier palo)</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂲</span> Dos (cualquier palo)
+                        </div>
                         <div class="tabla-celda seña">Fruncir los labios</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">7°</div>
-                        <div class="tabla-celda carta">Anchos falsos (oro/copa)</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂡</span> Anchos falsos
+                        </div>
                         <div class="tabla-celda seña">Abrir un poco la boca</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">8°</div>
-                        <div class="tabla-celda carta">Doces (Reyes)</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂾</span> Doces (Reyes)
+                        </div>
                         <div class="tabla-celda seña">-</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">9°</div>
-                        <div class="tabla-celda carta">Onces (Caballos)</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂽</span> Onces (Caballos)
+                        </div>
                         <div class="tabla-celda seña">-</div>
                     </div>
                     <div class="tabla-fila">
                         <div class="tabla-celda numero">10°</div>
-                        <div class="tabla-celda carta">Dieces (Sotas)</div>
+                        <div class="tabla-celda carta">
+                            <span class="carta-emoji">🂻</span> Dieces (Sotas)
+                        </div>
                         <div class="tabla-celda seña">-</div>
-                    </div>
-                    <div class="tabla-fila">
-                        <div class="tabla-celda numero">11°</div>
-                        <div class="tabla-celda carta">Sietes falsos (copa/basto)</div>
-                        <div class="tabla-celda seña">Cerrar los ojos</div>
                     </div>
                 </div>
                 
@@ -140,7 +153,7 @@
             </div>
         </section>
 
-        <!-- Sección Los Cantos (Truco) -->
+        <!-- Sección Los Cantos -->
         <section id="cantos" class="seccion">
             <h2 class="titulo-seccion">
                 <i class="fas fa-dice"></i>
@@ -151,24 +164,22 @@
                 
                 <div class="caja-puntuacion">
                     <div class="puntuacion-item">
-                        <span class="puntos">1 punto</span>
-                        <span class="descripcion">Sin canto: gana la ronda</span>
+                        <span class="puntos">1</span>
+                        <span class="descripcion">Sin canto</span>
                     </div>
                     <div class="puntuacion-item">
-                        <span class="puntos">2 puntos</span>
+                        <span class="puntos">2</span>
                         <span class="descripcion">¡Truco!</span>
                     </div>
                     <div class="puntuacion-item">
-                        <span class="puntos">3 puntos</span>
+                        <span class="puntos">3</span>
                         <span class="descripcion">¡Retruco!</span>
                     </div>
                     <div class="puntuacion-item">
-                        <span class="puntos">4 puntos</span>
+                        <span class="puntos">4</span>
                         <span class="descripcion">¡Vale cuatro!</span>
                     </div>
                 </div>
-                
-                <p class="texto-regla">Si el oponente no quiere aceptar el canto, el que cantó se lleva los puntos de la apuesta anterior.</p>
             </div>
         </section>
 
@@ -191,16 +202,16 @@
                 
                 <div class="caja-puntuacion envido">
                     <div class="puntuacion-item">
-                        <span class="puntos">2 puntos</span>
+                        <span class="puntos">2</span>
                         <span class="descripcion">Envido</span>
                     </div>
                     <div class="puntuacion-item">
-                        <span class="puntos">3 puntos</span>
+                        <span class="puntos">3</span>
                         <span class="descripcion">Real envido</span>
                     </div>
                     <div class="puntuacion-item">
-                        <span class="puntos">Lo que falta</span>
-                        <span class="descripcion">Falta envido</span>
+                        <span class="puntos">Falta</span>
+                        <span class="descripcion">Lo que falta</span>
                     </div>
                 </div>
             </div>
@@ -220,7 +231,62 @@
             </div>
         </section>
 
-        <!-- Sección de frases típicas (extra) -->
+        <!-- Sección Contador de Puntos -->
+        <section id="contador" class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-calculator"></i>
+                Contador de Puntos
+            </h2>
+            <div class="card contador-container">
+                <div class="equipos-grid">
+                    <!-- Equipo 1 (Nosotros) -->
+                    <div class="equipo nosotros">
+                        <h3><i class="fas fa-users"></i> Nosotros</h3>
+                        <div class="puntos-display" id="puntos-nosotros">0</div>
+                        <div class="botones-puntos">
+                            <button class="btn-punto" onclick="sumarPuntos('nosotros', 1)">+1</button>
+                            <button class="btn-punto" onclick="sumarPuntos('nosotros', 2)">+2</button>
+                            <button class="btn-punto" onclick="sumarPuntos('nosotros', 3)">+3</button>
+                            <button class="btn-punto" onclick="sumarPuntos('nosotros', 4)">+4</button>
+                            <button class="btn-punto resto" onclick="sumarPuntos('nosotros', 'resto')">Falta</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Equipo 2 (Ellos) -->
+                    <div class="equipo ellos">
+                        <h3><i class="fas fa-users"></i> Ellos</h3>
+                        <div class="puntos-display" id="puntos-ellos">0</div>
+                        <div class="botones-puntos">
+                            <button class="btn-punto" onclick="sumarPuntos('ellos', 1)">+1</button>
+                            <button class="btn-punto" onclick="sumarPuntos('ellos', 2)">+2</button>
+                            <button class="btn-punto" onclick="sumarPuntos('ellos', 3)">+3</button>
+                            <button class="btn-punto" onclick="sumarPuntos('ellos', 4)">+4</button>
+                            <button class="btn-punto resto" onclick="sumarPuntos('ellos', 'resto')">Falta</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="controles-partida">
+                    <button class="btn-reiniciar" onclick="reiniciarPartida()">
+                        <i class="fas fa-redo-alt"></i> Reiniciar partida
+                    </button>
+                    <div class="selector-puntaje">
+                        <label>Jugar a:</label>
+                        <select id="puntaje-maximo" onchange="cambiarPuntajeMaximo()">
+                            <option value="15">15 puntos</option>
+                            <option value="30" selected>30 puntos</option>
+                            <option value="24">24 puntos</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="mensaje-victoria" class="mensaje-victoria" style="display: none;">
+                    🏆 ¡Equipo ganador! 🏆
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de frases típicas -->
         <section class="seccion">
             <h2 class="titulo-seccion">
                 <i class="fas fa-comment"></i>
@@ -246,5 +312,8 @@
             <p class="footer-peque">"Más falso que un beso de suegra"</p>
         </div>
     </footer>
+
+    <!-- Script del contador -->
+    <script src="script.js"></script>
 </body>
-                  </html>
+                        </html>
