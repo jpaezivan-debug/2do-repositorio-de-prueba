@@ -1,14 +1,14 @@
 /* ===== ESTILOS GENERALES ===== */
 :root {
-    --fondo-principal: #87CEEB;    /* Celeste cielo */
+    --fondo-principal: #1a2f3f;    /* Azul noche elegante */
     --verde-claro: #2d6a2d;
     --rojo-truco: #b22222;
     --amarillo-oro: #ffc857;
-    --crema: #faf0e6;
+    --crema: #ffffff;               /* Texto blanco puro */
     --marron: #5d3a1a;
-    --gris-oscuro: #333;
-    --sombra: 0 4px 8px rgba(0,0,0,0.2);
-    --fondo-tarjeta: rgba(255, 255, 255, 0.25); /* Tarjetas más claras */
+    --gris-oscuro: #cccccc;
+    --sombra: 0 4px 8px rgba(0,0,0,0.5);
+    --fondo-tarjeta: rgba(0, 0, 0, 0.5);  /* Tarjetas semi-transparentes */
 }
 
 * {
@@ -22,7 +22,7 @@ body {
     background-color: var(--fondo-principal);
     color: var(--crema);
     line-height: 1.6;
-    background-image: radial-gradient(circle at 10% 30%, rgba(255,255,255,0.2) 0%, transparent 20%);
+    background-image: radial-gradient(circle at 10% 30%, rgba(255,255,255,0.1) 0%, transparent 20%);
 }
 
 .container {
@@ -248,7 +248,7 @@ h1, h2, h3 {
 .nota {
     margin-top: 15px;
     font-style: italic;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
     border-radius: 8px;
 }
@@ -264,7 +264,7 @@ h1, h2, h3 {
 
 .puntuacion-item {
     flex: 1 1 180px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -274,7 +274,7 @@ h1, h2, h3 {
 
 .puntuacion-item:hover {
     transform: translateY(-5px);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .puntos {
@@ -290,7 +290,7 @@ h1, h2, h3 {
 }
 
 .envido .puntuacion-item {
-    background-color: rgba(178, 34, 34, 0.3);
+    background-color: rgba(178, 34, 34, 0.4);
 }
 
 /* ===== FRASES ===== */
@@ -374,10 +374,6 @@ h1, h2, h3 {
         display: none;
     }
     
-    .tabla-fila::before {
-        display: none;
-    }
-    
     .frase-grid {
         grid-template-columns: 1fr;
     }
@@ -395,4 +391,4 @@ h1, h2, h3 {
     .puntuacion-item {
         flex: 1 1 100%;
     }
-    }
+}
