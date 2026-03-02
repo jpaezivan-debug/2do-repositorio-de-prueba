@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas del Truco Argentino</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para íconos (opcional pero queda lindo) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header con título principal -->
+    <header class="header">
+        <div class="container">
+            <h1 class="titulo-principal">
+                <i class="fas fa-dragon"></i> 
+                Truco Argentino
+                <i class="fas fa-dragon"></i>
+            </h1>
+            <p class="subtitulo">La guía definitiva del juego de la picardía</p>
+        </div>
+    </header>
 
+    <!-- Barra de navegación simple -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-lista">
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#jerarquia">Jerarquía</a></li>
+                <li><a href="#cantos">Cantos</a></li>
+                <li><a href="#envido">Envido</a></li>
+                <li><a href="#flor">Flor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Sección Introducción -->
+        <section id="introduccion" class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-info-circle"></i> 
+                Introducción
+            </h2>
+            <div class="card">
+                <p class="texto-destacado">El truco es un juego de naipes argentino que combina estrategia, astucia y... ¡mentiras! Se caracteriza por su picardía y el lenguaje de señas entre compañeros.</p>
+                
+                <h3><i class="fas fa-bullseye"></i> Objetivo</h3>
+                <p>Ser el primero en alcanzar <span class="resaltado">15 o 30 puntos</span> (acordados al inicio). Los primeros 15 se llaman "las malas" y los segundos 15 "las buenas".</p>
+                
+                <h3><i class="fas fa-layer-group"></i> Elementos necesarios</h3>
+                <ul class="lista-elementos">
+                    <li><i class="fas fa-dragon"></i> Baraja española de 40 cartas (sin 8, 9 ni comodines)</li>
+                    <li><i class="fas fa-pencil-alt"></i> Papel y lápiz para anotar puntos</li>
+                    <li><i class="fas fa-users"></i> 2, 4 o 6 jugadores (en equipos)</li>
+                </ul>
+
+                <h3><i class="fas fa-hand-paper"></i> La ronda</h3>
+                <p>A cada jugador se le reparten <span class="resaltado">3 cartas</span>. Una ronda tiene 3 "manos" (una por carta). Gana la ronda quien gane al menos 2 de esas 3 manos.</p>
+            </div>
+        </section>
+
+        <!-- Sección Jerarquía de Cartas -->
+        <section id="jerarquia" class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-sort-amount-down"></i>
+                Jerarquía de las cartas
+            </h2>
+            <div class="card">
+                <p class="texto-importante">¡Atención! En el truco, las cartas NO valen por su número. Esta es la escala de mayor a menor:</p>
+                
+                <!-- Tabla de jerarquía en grid -->
+                <div class="tabla-jerarquia">
+                    <!-- Títulos de la tabla -->
+                    <div class="tabla-fila titulos">
+                        <div class="tabla-celda">Jerarquía</div>
+                        <div class="tabla-celda">Carta</div>
+                        <div class="tabla-celda">Seña</div>
+                    </div>
+                    
+                    <!-- Filas de cartas -->
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">1° (La más alta)</div>
+                        <div class="tabla-celda carta">🂡 Ancho de espadas</div>
+                        <div class="tabla-celda seña">Levantar cejas</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">2°</div>
+                        <div class="tabla-celda carta">🂣 Ancho de bastos</div>
+                        <div class="tabla-celda seña">Guiñar ojo derecho</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">3°</div>
+                        <div class="tabla-celda carta">🂮 Siete de espadas</div>
+                        <div class="tabla-celda seña">Mover labio derecha</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">4°</div>
+                        <div class="tabla-celda carta">🂧 Siete de oros</div>
+                        <div class="tabla-celda seña">Mover labio izquierda</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">5°</div>
+                        <div class="tabla-celda carta">Tres (cualquier palo)</div>
+                        <div class="tabla-celda seña">Morder labio inferior</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">6°</div>
+                        <div class="tabla-celda carta">Dos (cualquier palo)</div>
+                        <div class="tabla-celda seña">Fruncir los labios</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">7°</div>
+                        <div class="tabla-celda carta">Anchos falsos (oro/copa)</div>
+                        <div class="tabla-celda seña">Abrir un poco la boca</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">8°</div>
+                        <div class="tabla-celda carta">Doces (Reyes)</div>
+                        <div class="tabla-celda seña">-</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">9°</div>
+                        <div class="tabla-celda carta">Onces (Caballos)</div>
+                        <div class="tabla-celda seña">-</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">10°</div>
+                        <div class="tabla-celda carta">Dieces (Sotas)</div>
+                        <div class="tabla-celda seña">-</div>
+                    </div>
+                    <div class="tabla-fila">
+                        <div class="tabla-celda numero">11°</div>
+                        <div class="tabla-celda carta">Sietes falsos (copa/basto)</div>
+                        <div class="tabla-celda seña">Cerrar los ojos</div>
+                    </div>
+                </div>
+                
+                <p class="nota">💡 Las señas son fundamentales para comunicarse con tu compañero sin que los rivales se den cuenta.</p>
+            </div>
+        </section>
+
+        <!-- Sección Los Cantos (Truco) -->
+        <section id="cantos" class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-dice"></i>
+                Los Cantos: El Truco
+            </h2>
+            <div class="card">
+                <p>El truco se canta para aumentar los puntos en juego. La secuencia es:</p>
+                
+                <div class="caja-puntuacion">
+                    <div class="puntuacion-item">
+                        <span class="puntos">1 punto</span>
+                        <span class="descripcion">Sin canto: gana la ronda</span>
+                    </div>
+                    <div class="puntuacion-item">
+                        <span class="puntos">2 puntos</span>
+                        <span class="descripcion">¡Truco!</span>
+                    </div>
+                    <div class="puntuacion-item">
+                        <span class="puntos">3 puntos</span>
+                        <span class="descripcion">¡Retruco!</span>
+                    </div>
+                    <div class="puntuacion-item">
+                        <span class="puntos">4 puntos</span>
+                        <span class="descripcion">¡Vale cuatro!</span>
+                    </div>
+                </div>
+                
+                <p class="texto-regla">Si el oponente no quiere aceptar el canto, el que cantó se lleva los puntos de la apuesta anterior.</p>
+            </div>
+        </section>
+
+        <!-- Sección El Envido -->
+        <section id="envido" class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-calculator"></i>
+                El Envido
+            </h2>
+            <div class="card">
+                <p>Se canta <span class="resaltado">antes de jugar la primera carta</span>. Premia tener cartas del mismo palo.</p>
+                
+                <h3>📊 ¿Cómo se calcula?</h3>
+                <ul class="lista-reglas">
+                    <li>Sumás el valor de las 2 cartas del mismo palo (las figuras: 10, 11, 12 valen CERO)</li>
+                    <li>Le sumás 20 puntos</li>
+                    <li>El máximo es 33 (7 y 6 del mismo palo)</li>
+                    <li>Si las 3 cartas son de distinto palo, tomás la más alta (sin sumar 20)</li>
+                </ul>
+                
+                <div class="caja-puntuacion envido">
+                    <div class="puntuacion-item">
+                        <span class="puntos">2 puntos</span>
+                        <span class="descripcion">Envido</span>
+                    </div>
+                    <div class="puntuacion-item">
+                        <span class="puntos">3 puntos</span>
+                        <span class="descripcion">Real envido</span>
+                    </div>
+                    <div class="puntuacion-item">
+                        <span class="puntos">Lo que falta</span>
+                        <span class="descripcion">Falta envido</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección La Flor -->
+        <section id="flor" class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-leaf"></i>
+                La Flor
+            </h2>
+            <div class="card">
+                <p class="texto-destacado">⚡ Regla OPCIONAL (se acuerda al principio) ⚡</p>
+                <p>Ocurre cuando tus <span class="resaltado">3 cartas son del mismo palo</span>.</p>
+                <p class="texto-grande">¡Ganás 3 puntos automáticamente si los rivales no tienen flor!</p>
+                <p>Si hay rivalidad, se canta "contraflor" y la apuesta sube.</p>
+            </div>
+        </section>
+
+        <!-- Sección de frases típicas (extra) -->
+        <section class="seccion">
+            <h2 class="titulo-seccion">
+                <i class="fas fa-comment"></i>
+                Frases del truco
+            </h2>
+            <div class="card frases">
+                <div class="frase-grid">
+                    <span class="frase">"Ir / Vir"</span>
+                    <span class="frase">"Poner"</span>
+                    <span class="frase">"Matar"</span>
+                    <span class="frase">"Empardar"</span>
+                    <span class="frase">"Son buenas"</span>
+                    <span class="frase">"Son malas"</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 - Reglas del Truco Argentino | Creado con <i class="fas fa-heart"></i> para los amantes del truco</p>
+            <p class="footer-peque">"Más falso que un beso de suegra"</p>
+        </div>
+    </footer>
+</body>
+                  </html>
